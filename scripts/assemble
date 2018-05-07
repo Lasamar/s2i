@@ -93,7 +93,7 @@ if [ -d $LOCAL_SOURCE_DIR/bin ]; then
   file_count=$(ls -1 $LOCAL_SOURCE_DIR/bin | wc -l)
   if [ $file_count -gt 0 ]; then
     echo "Copying bin files from project..."
-    cp -v $LOCAL_SOURCE_DIR/bin/* $JWS_HOME/bin/
+    cp -Rv $LOCAL_SOURCE_DIR/bin/* $JWS_HOME/bin/
   fi
 fi
 
